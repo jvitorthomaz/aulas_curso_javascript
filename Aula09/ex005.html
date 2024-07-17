@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Primeiros passos com DOM</title>
+    <style>
+    body{
+        background: rgb(68, 125, 199);
+        color: white;
+        font: normal 18pt Arial;
+    }
+    </style>
+</head>
+<body>
+    <h1>Iniciando estudos com DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Apredendo a usar o <strong>DOM</strong> em JS</p>
+    <!-- <div id="msg">Clique em mim</div> -->
+    <div class="msg">Clique em mim</div>
+    <script>
+        var corpo = window.document.body
+        var p1 = window.document.getElementsByTagName('p') [0] //[0] usadopara escolher qual 'p'pegar neste caso
+        window.document.write('Esta escrito assim: '+ p1.innerText)//innerHTML vem com a formatacao que esta no html
+        corpo.style.background = 'black'
+        p1.style.color = 'blue'
+
+        //var d = window.document.getElementById('msg')
+        //d.style.background = 'green'
+        //d.innerText = 'estou aguardando...'
+
+        //var d = window.document.getElementsByName('msg') [0]
+        //d.innerText = 'Olá!'
+        //window.document.getElementsByClassName
+
+        var d = window.document.querySelector('div.msg')  //classe é representada po div.msg e 
+                                                         //id é representada por div#msg
+        d.style.background = 'blue'                     //querySelector
+    </script>
+</body>
+</html>
+

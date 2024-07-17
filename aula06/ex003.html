@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+        body{    
+            background-color: rgb(105, 105, 173);
+            color: white;
+            font: normal 20pt Arial; /* comentario */
+        }
+    </style>
+</head>
+
+<body>
+        <h1>Olá, mundo!</h1>
+        <p>Já me livrei da maldiçao!!</p> <!--cometario-->
+
+        <script>
+             /*
+             var n1 = window.prompt('Digite um numero:') // comando window.prompt tem por caraceristica retornar uma String
+             var n2 = window.prompt('Digite outro numero')
+             var s = n1 + n2 
+             window.alert('A soma dos valores é ' + s)//Realiza concatenaçao
+             // (number + number) para adiçao 
+             // (string + string) para concatenaçao
+             */
+             var n1 = Number.parseInt(window.prompt('Digite um numero:'))
+             var n2 = Number(window.prompt('Digite outro numero'))
+             var s  = n1 + n2 
+             //window.alert('A soma dos valores é ' + String(s))  exemplo de conversao para string 
+             window.alert(`A soma entre ${n1} e ${n2} é igual a ${s}`) // uso do templete string place holder ${ } para interpolaçao  
+
+        </script>
+</body>
+
+</html>
